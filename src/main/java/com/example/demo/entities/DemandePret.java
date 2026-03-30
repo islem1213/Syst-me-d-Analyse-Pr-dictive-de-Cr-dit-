@@ -65,4 +65,8 @@ public class DemandePret implements Serializable {
         }
         return client.getChargesFixes().divide(revenu, 4, RoundingMode.HALF_UP);
     }
+
+    public BigDecimal calculerRatio() {
+        return calculerRatioEndettement();
+    }
 }
